@@ -1,0 +1,57 @@
+{
+  "lurah": {
+    "name": "Sri Marwati, S.Tr. Sos., MM",
+    "role": "Lurah Letta",
+    "nip": "19930427 2019032020",
+    "photo": ""
+  },
+  "rw": [
+    {
+      "name": "RW I",
+      "area": "Tompong Barat",
+      "ketua": "Rusli",
+      "rt": [
+        { "label": "RT I", "name": "M. Baris" },
+        { "label": "RT II", "name": "Suharni" },
+        { "label": "RT III", "name": "Chaeruddin" }
+      ]
+    },
+    {
+      "name": "RW II",
+      "area": "Tompong Timur",
+      "ketua": "Nur Ahyadi",
+      "rt": [
+        { "label": "RT I", "name": "Sukri" },
+        { "label": "RT II", "name": "M. Rusli S." },
+        { "label": "RT III", "name": "Suriani" }
+      ]
+    },
+    {
+      "name": "RW III",
+      "area": "Tompong Utara",
+      "ketua": "Muhammad Yunus",
+      "rt": [
+        { "label": "RT I", "name": "Hasanuddin" },
+        { "label": "RT II", "name": "Jumiati" }
+      ]
+    },
+    {
+      "name": "RW IV",
+      "area": "Maricayya",
+      "ketua": "Baso Karimong",
+      "rt": [
+        { "label": "RT I", "name": "Suriani" },
+        { "label": "RT II", "name": "Syarifuddin" }
+      ]
+    },
+    {
+      "name": "RW V",
+      "area": "Pa'rannassang",
+      "ketua": "Sahrul",
+      "rt": [
+        { "label": "RT I", "name": "Erniwati Majid" },
+        { "label": "RT II", "name": "Muhammad Amir" }
+      ]
+    }
+  ]
+}
