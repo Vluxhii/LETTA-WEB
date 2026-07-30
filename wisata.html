@@ -136,7 +136,7 @@ function render(){
   });
   grid.innerHTML=filtered.map(it=>`
     <div class="card">
-      <div class="card-art">${artFor(it.cat)}</div>
+      <div class="card-art">${it.photo ? `<img src="${it.photo}" alt="${it.name}" style="width:100%;height:100%;object-fit:cover;display:block;">` : artFor(it.cat)}</div>
       <div class="card-body">
         <span class="tag">${it.cat==='wisata'?'Wisata Alam':it.cat==='sejarah'?'Situs Sejarah':'Kuliner'}</span>
         <h4>${it.name}</h4>
