@@ -93,8 +93,12 @@
   <div class="hero-v2-float-left">
     <button class="pill-announce">📢 Pengumuman</button>
   </div>
-  <div class="hero-v2-float-right">
-    <button class="fab-menu" aria-label="Menu cepat">☰</button>
+  <div class="hero-v2-float-right fab-wrap">
+    <div class="fab-popup" id="fabPopup">
+      <a href="admin/index.html">🔑 Dashboard Admin</a>
+      <button type="button" id="fabScrollTop">⬆️ Kembali ke atas</button>
+    </div>
+    <button class="fab-menu" id="fabMenuBtn" aria-label="Menu cepat">☰</button>
   </div>
 </section>
 
@@ -308,6 +312,28 @@
 </footer>
 
 <script src="assets/nav.js"></script>
+<script>
+const fabMenuBtn = document.getElementById('fabMenuBtn');
+const fabPopup = document.getElementById('fabPopup');
+if (fabMenuBtn && fabPopup) {
+  fabMenuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    fabPopup.classList.toggle('open');
+  });
+  document.addEventListener('click', (e) => {
+    if (!fabPopup.contains(e.target) && e.target !== fabMenuBtn) {
+      fabPopup.classList.remove('open');
+    }
+  });
+}
+const fabScrollTop = document.getElementById('fabScrollTop');
+if (fabScrollTop) {
+  fabScrollTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    fabPopup.classList.remove('open');
+  });
+}
+</script>
 <script>
 if (window.netlifyIdentity) {
   window.netlifyIdentity.on("init", user => {
