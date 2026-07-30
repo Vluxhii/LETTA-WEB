@@ -56,6 +56,7 @@ collections:
             summary: "{{name}}"
             fields:
               - { label: "Nama Tempat", name: "name", widget: "string" }
+              - { label: "Foto", name: "photo", widget: "image", required: false, media_folder: "/images/wisata", public_folder: "/images/wisata" }
               - label: "Kategori"
                 name: "cat"
                 widget: "select"
