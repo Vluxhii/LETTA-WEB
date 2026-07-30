@@ -215,6 +215,9 @@
   }
   .hero-v2-float-left{left:24px;}
   .hero-v2-float-right{right:24px;}
+  .hero-v2-float-right.fab-wrap{
+    position:fixed;bottom:24px;right:24px;z-index:90;
+  }
   .pill-announce{
     background:#E8A23A;color:#3D2A08;border:none;border-radius:30px;
     padding:12px 20px;font-family:'IBM Plex Mono',monospace;font-size:.8rem;font-weight:600;
