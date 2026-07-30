@@ -82,6 +82,95 @@ collections:
             summary: "{{title}}"
             fields:
               - { label: "Judul", name: "title", widget: "string" }
-              - { label: "Tanggal", name: "date", widget: "date" }
+              - { label: "Tanggal", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+              - { label: "Foto", name: "photo", widget: "image", required: false, media_folder: "/images/berita", public_folder: "/images/berita" }
+              - { label: "Ringkasan", name: "excerpt", widget: "text" }
+              - { label: "Isi Lengkap", name: "content", widget: "text" }
+backend:
+  name: git-gateway
+  branch: main
+
+site_url: /
+display_url: /
+logo_url: /images/logo/logo-bantaeng.png
+
+media_folder: "images/team"
+public_folder: "/images/team"
+
+locale: "id"
+
+collections:
+  - name: "team"
+    label: "Struktur Organisasi"
+    files:
+      - name: "team"
+        label: "Struktur RW/RT Kelurahan Letta"
+        file: "content/team.json"
+        fields:
+          - label: "Lurah"
+            name: "lurah"
+            widget: "object"
+            fields:
+              - { label: "Nama", name: "name", widget: "string" }
+              - { label: "Jabatan", name: "role", widget: "string" }
+              - { label: "NIP", name: "nip", widget: "string", required: false }
+              - { label: "Foto", name: "photo", widget: "image", required: false }
+          - label: "Daftar RW"
+            name: "rw"
+            widget: "list"
+            summary: "{{name}} — {{area}}"
+            fields:
+              - { label: "Nama RW (mis. RW I)", name: "name", widget: "string" }
+              - { label: "Nama Kampung/Wilayah", name: "area", widget: "string" }
+              - { label: "Nama Ketua RW", name: "ketua", widget: "string", required: false }
+              - label: "Daftar RT"
+                name: "rt"
+                widget: "list"
+                summary: "{{label}} — {{name}}"
+                fields:
+                  - { label: "Label RT (mis. RT I)", name: "label", widget: "string" }
+                  - { label: "Nama Ketua RT", name: "name", widget: "string", required: false }
+
+  - name: "items"
+    label: "Wisata & Kuliner"
+    files:
+      - name: "items"
+        label: "Daftar Wisata & Kuliner"
+        file: "content/items.json"
+        fields:
+          - label: "Daftar Tempat"
+            name: "items"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Nama Tempat", name: "name", widget: "string" }
+              - { label: "Foto", name: "photo", widget: "image", required: false, media_folder: "/images/wisata", public_folder: "/images/wisata" }
+              - label: "Kategori"
+                name: "cat"
+                widget: "select"
+                options:
+                  - { label: "Wisata Alam", value: "wisata" }
+                  - { label: "Situs Sejarah", value: "sejarah" }
+                  - { label: "Kuliner", value: "kuliner" }
+              - { label: "Lokasi", name: "loc", widget: "string" }
+              - { label: "Deskripsi", name: "desc", widget: "text" }
+              - { label: "Latitude", name: "lat", widget: "number", value_type: "float" }
+              - { label: "Longitude", name: "lng", widget: "number", value_type: "float" }
+
+  - name: "berita"
+    label: "Berita & Informasi"
+    files:
+      - name: "berita"
+        label: "Daftar Berita"
+        file: "content/berita.json"
+        fields:
+          - label: "Daftar Berita"
+            name: "items"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Judul", name: "title", widget: "string" }
+              - { label: "Tanggal", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+              - { label: "Foto", name: "photo", widget: "image", required: false, media_folder: "/images/berita", public_folder: "/images/berita" }
               - { label: "Ringkasan", name: "excerpt", widget: "text" }
               - { label: "Isi Lengkap", name: "content", widget: "text" }
