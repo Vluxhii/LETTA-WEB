@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: main
 
+site_url: /
+display_url: /
+logo_url: /images/logo/logo-bantaeng.png
+
 media_folder: "images/team"
 public_folder: "/images/team"
 
