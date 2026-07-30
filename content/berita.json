@@ -21,7 +21,8 @@
     {
       "title": "Contoh Judul berita 4",
       "excerpt": "Ringkasan singkat berita ini — ganti dengan isi berita sesungguhnya lewat dashboard admin.",
-      "content": "Ini adalah isi lengkap berita — ganti dengan isi berita sesungguhnya lewat dashboard admin. Bagian ini akan muncul penuh saat kartu berita diklik oleh pengunjung."
+      "content": "Ini adalah isi lengkap berita — ganti dengan isi berita sesungguhnya lewat dashboard admin. Bagian ini akan muncul penuh saat kartu berita diklik oleh pengunjung.",
+      "date": "2026-07-30"
     }
   ]
 }
