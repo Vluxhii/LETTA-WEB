@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "title": "Contoh Judul Berita 1",
+      "date": "2026-07-01",
+      "excerpt": "Ringkasan singkat berita ini — ganti dengan isi berita sesungguhnya lewat dashboard admin.",
+      "content": "Ini adalah isi lengkap berita — ganti dengan isi berita sesungguhnya lewat dashboard admin. Bagian ini akan muncul penuh saat kartu berita diklik oleh pengunjung."
+    },
+    {
+      "title": "Contoh Judul Berita 2",
+      "date": "2026-06-24",
+      "excerpt": "Ringkasan singkat berita ini — ganti dengan isi berita sesungguhnya lewat dashboard admin.",
+      "content": "Ini adalah isi lengkap berita — ganti dengan isi berita sesungguhnya lewat dashboard admin. Bagian ini akan muncul penuh saat kartu berita diklik oleh pengunjung."
+    },
+    {
+      "title": "Contoh Judul Berita 3",
+      "date": "2026-06-15",
+      "excerpt": "Ringkasan singkat berita ini — ganti dengan isi berita sesungguhnya lewat dashboard admin.",
+      "content": "Ini adalah isi lengkap berita — ganti dengan isi berita sesungguhnya lewat dashboard admin. Bagian ini akan muncul penuh saat kartu berita diklik oleh pengunjung."
+    }
+  ]
+}

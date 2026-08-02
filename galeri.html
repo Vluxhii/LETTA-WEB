@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri — Kelurahan Letta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="nav-v2 nav-static">
+  <div class="nav-v2-inner">
+    <div class="nav-v2-pill">
+      <div class="brand-v2">
+        <div class="badge-circle"><img src="images/logo/logo-bantaeng.png" width="40" height="40" alt="Logo Kabupaten Bantaeng"></div>
+        <div>
+          <div class="brand-v2-title">Kelurahan Letta</div>
+          <div class="brand-v2-sub">Kec. Bantaeng, Kab. Bantaeng</div>
+        </div>
+      </div>
+      <button class="nav-v2-toggle" id="navToggleV2" aria-label="Buka menu">☰</button>
+      <nav class="nav-v2-links" id="navLinksV2">
+        <a href="index.html#beranda">Beranda</a>
+        <div class="nav-dropdown">
+          <a href="index.html#letta" class="nav-dropdown-trigger">Profil
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6,9 L12,15 L18,9"/></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <div class="nav-dropdown-menu-inner">
+              <a href="index.html#letta">Profil Kelurahan</a>
+              <a href="index.html#visimisi">Visi &amp; Misi</a>
+              <a href="index.html#sejarah">Sejarah</a>
+              <a href="index.html#berita">Info Terkini</a>
+              <a href="index.html#peta">Peta</a>
+              <a href="galeri.html">Galeri</a>
+              <a href="wisata.html">Wisata</a>
+              <a href="data-kelurahan.html">Data Kelurahan</a>
+            </div>
+          </div>
+        </div>
+        <a href="struktur.html">Struktur</a>
+        <div class="nav-dropdown">
+          <a href="layanan.html" class="nav-dropdown-trigger">Layanan
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6,9 L12,15 L18,9"/></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <div class="nav-dropdown-menu-inner">
+              <a href="layanan.html">Alur Pelayanan</a>
+              <a href="pengaduan.html">Pengaduan</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section id="galeri">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">07 — Galeri</span>
+      <h2>Ilustrasi rupa Bantaeng</h2>
+      <p>Ilustrasi orisinal yang menggambarkan suasana khas Bantaeng — dari ladang kentang di dataran tinggi hingga petani rumput laut di pesisir.</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>Kelurahan Letta</h4>
+      <p>Portal informasi independen tentang Kelurahan Letta, disusun untuk memperkenalkan profil daerah, sejarah, dan potensi wilayah kepada publik.</p>
+    </div>
+    <div>
+      <h4>Sumber data</h4>
+      <div class="sources">
+        Pemerintah Kab. Bantaeng (bantaengkab.go.id)<br>
+        Wikipedia — Kabupaten Bantaeng &amp; Letta, Bantaeng<br>
+        BPS Kabupaten Bantaeng, Kecamatan Bantaeng Dalam Angka 2024<br>
+        Pemerintah Prov. Sulawesi Selatan (sulselprov.go.id)<br>
+        Profil Kelurahan Letta (2018)<br>
+        Kelurahan Letta Dalam Angka 2026, KKN-T Gel. 116 Universitas Hasanuddin
+      </div>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Portal Informasi Bantaeng</span>
+    <span>Dibuat sebagai proyek informasi daerah</span>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+<script>
+const galleryItems=[
+  {title:'Dataran tinggi & ladang kentang', c1:'#5C8A5F', c2:'#C9D8AE'},
+  {title:'Pesisir & petani rumput laut', c1:'#1B4A54', c2:'#8FAFA0'},
+  {title:'Pegunungan Lompobattang', c1:'#B4632F', c2:'#E4DCC8'},
+  {title:'Suasana pasar rakyat', c1:'#E2703A', c2:'#F3E3D3'}
+];
+document.getElementById('galleryGrid').innerHTML=galleryItems.map(g=>`
+  <div class="g-item">
+    <svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice">
+      <rect width="300" height="200" fill="${g.c2}"/>
+      <path d="M0,150 Q75,110 150,140 T300,130 L300,200 L0,200 Z" fill="${g.c1}" opacity="0.85"/>
+      <circle cx="240" cy="45" r="24" fill="${g.c1}" opacity="0.45"/>
+    </svg>
+  </div>
+`).join('');
+</script>
+</body>
+</html>
