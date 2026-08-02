@@ -14,23 +14,7 @@
       "loc": "Kelurahan Letta, Kecamatan Bantaeng",
       "desc": "Menampilkan rumah adat peninggalan Kerajaan Gowa dengan bentuk rumah panggung besar dan panjang. Biaya masuk sangat terjangkau (sekitar Rp2.000/orang) — cocok bagi wisatawan yang tertarik nilai sejarah dan budaya.",
       "lat": -5.5505,
-      "lng": 119.9550
-    },
-    {
-      "name": "Desa Wisata Tompong",
-      "cat": "wisata",
-      "loc": "Kampung Tompong, Kelurahan Letta",
-      "desc": "Terdaftar sebagai Desa Wisata Rintisan dalam program Jaringan Desa Wisata (Jadesta) Kemenparekraf, kategori wisata alam. Fasilitas: area parkir, ATM, kamar mandi umum, musholla, dan tempat makan. Status masih Rintisan (tahap awal pengembangan), jadi belum banyak paket wisata atau homestay tersedia.",
-      "lat": -5.5518,
-      "lng": 119.9563
-    },
-    {
-      "name": "Sup Ubi Tompong",
-      "cat": "kuliner",
-      "loc": "Jl. Bete-bete, Dusun Tompong, Kelurahan Letta",
-      "desc": "Kuliner legendaris dari Dusun Tompong — kampung yang sama dengan lokasi Masjid Taqwa Tompong. Berisi potongan ubi, daging, bihun, telur, daun bawang, dan bawang goreng dalam kaldu gurih. Warungnya sekitar 100 meter dari Masjid Taqwa Tompong, sudah lama menjadi tujuan makan yang ramai dikunjungi warga lokal maupun wisatawan luar daerah.",
-      "lat": -5.5513,
-      "lng": 119.9560
+      "lng": 119.955
     }
   ]
 }
