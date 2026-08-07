@@ -1,0 +1,66 @@
+{
+  "lurah": {
+    "name": "Sri Marwati, S.Tr. Sos., MM",
+    "role": "Lurah Letta",
+    "nip": "19930427 201903 2 024",
+    "photo": ""
+  },
+  "pegawai": [
+    { "nama": "Sri Marwati, S.Tr.S.Sos.MM", "nip": "19930427 201903 2 024", "jabatan": "Lurah", "gol": "" },
+    { "nama": "Rosdiana, S.Pt.MM", "nip": "19740829 200701 2 009", "jabatan": "Sekretaris Kelurahan", "gol": "" },
+    { "nama": "Fatimah, S.Sos", "nip": "19751015 200701 2 024", "jabatan": "Kasi Pemerintahan", "gol": "III/c" },
+    { "nama": "Asdar, S.IP", "nip": "19801231 200604 1 013", "jabatan": "Kasi Pelayanan Umum", "gol": "III/c" },
+    { "nama": "Andriyanti, S.Sos", "nip": "19800818 200701 2 014", "jabatan": "Kasi Pembangunan dan Pemberdayaan Masyarakat", "gol": "III/c" },
+    { "nama": "Firman Fahruddin, SE", "nip": "19801121 200903 1 002", "jabatan": "Analisis Pembangunan dan Pemberdayaan Masyarakat", "gol": "III/c" },
+    { "nama": "Andi Alma Maryam", "nip": "19700325 201602 2 001", "jabatan": "Pengadministrasi Persuratan", "gol": "II/c" }
+  ],
+  "rw": [
+    {
+      "name": "RW I",
+      "area": "Tompong Barat",
+      "ketua": "Rusli",
+      "rt": [
+        { "label": "RT I", "name": "M. Baris" },
+        { "label": "RT II", "name": "Suharni" },
+        { "label": "RT III", "name": "Chaeruddin" }
+      ]
+    },
+    {
+      "name": "RW II",
+      "area": "Tompong Timur",
+      "ketua": "Nur Ahyadi",
+      "rt": [
+        { "label": "RT I", "name": "Sukri" },
+        { "label": "RT II", "name": "M. Rusli S." },
+        { "label": "RT III", "name": "Suriani" }
+      ]
+    },
+    {
+      "name": "RW III",
+      "area": "Tompong Utara",
+      "ketua": "Muhammad Yunus",
+      "rt": [
+        { "label": "RT I", "name": "Hasanuddin" },
+        { "label": "RT II", "name": "Jumiati" }
+      ]
+    },
+    {
+      "name": "RW IV",
+      "area": "Maricayya",
+      "ketua": "Baso Karimong",
+      "rt": [
+        { "label": "RT I", "name": "Suriani" },
+        { "label": "RT II", "name": "Syarifuddin" }
+      ]
+    },
+    {
+      "name": "RW V",
+      "area": "Pa'rannassang",
+      "ketua": "Sahrul",
+      "rt": [
+        { "label": "RT I", "name": "Erniwati Majid" },
+        { "label": "RT II", "name": "Muhammad Amir" }
+      ]
+    }
+  ]
+}
