@@ -27,29 +27,12 @@ Website ini sekarang terdiri dari **beberapa halaman terpisah** (bukan satu hala
 
 ## Langkah setup (dilakukan sekali oleh tim IT Diskominfo)
 
-### 1. Unggah ke GitHub
-1. Buat akun GitHub (jika belum ada) di [github.com](https://github.com)
-2. Buat repository baru, misal `portal-letta`
-3. Unggah **semua isi folder ini** (bukan foldernya, tapi isinya) ke repository tersebut
-
-### 2. Hubungkan ke Netlify
-1. Buat akun di [netlify.com](https://netlify.com) (bisa langsung pakai akun GitHub)
-2. Klik **Add new site → Import an existing project**
-3. Pilih repository `portal-letta` yang sudah dibuat
-4. Biarkan pengaturan build kosong/default (situs ini statis, tidak perlu build command), klik **Deploy**
-5. Netlify akan memberi alamat sementara seperti `nama-acak-123.netlify.app` — ini sudah bisa diakses publik
-
-### 3. Aktifkan login untuk dashboard admin
+### 1. Aktifkan login untuk dashboard admin
 1. Di dashboard Netlify, buka **Site configuration → Identity**, klik **Enable Identity**
 2. Di bagian **Registration**, pilih **Invite only** (supaya tidak sembarang orang bisa daftar)
 3. Buka tab **Services → Git Gateway**, klik **Enable Git Gateway**
 4. Kembali ke tab **Identity**, klik **Invite users**, masukkan email staf kelurahan yang akan mengelola konten
 5. Staf akan menerima email undangan, klik link di email untuk membuat password
-
-### 4. Sambungkan domain (opsional)
-Kalau domain dari Rumahweb sudah siap, tinggal arahkan ke Netlify:
-- Di Netlify: **Domain management → Add custom domain**, masukkan domainmu
-- Di Rumahweb: ubah DNS sesuai instruksi yang diberikan Netlify (biasanya CNAME record)
 
 ## Cara staf kelurahan menggunakan dashboard
 
@@ -57,7 +40,6 @@ Kalau domain dari Rumahweb sudah siap, tinggal arahkan ke Netlify:
 2. Login dengan email & password yang sudah dibuat
 3. Pilih salah satu dari 3 menu:
    - **Struktur Organisasi** — isi/ubah nama, jabatan, dan unggah foto Lurah & staf
-   - **Wisata & Kuliner** — tambah, ubah, atau hapus tempat wisata dan kuliner
 4. Klik **Save**, lalu klik **Publish** — perubahan otomatis tayang di website dalam 1-2 menit
 
 ## Catatan penting
